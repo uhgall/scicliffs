@@ -27,3 +27,22 @@ Join the AI Revolution! 🚀 We're launching a crowdsourced, ever-evolving distr
 * Automatically submit them to substack? But, no API? Rob? 
 
 * Allow users to describe their style, audience, etc?
+
+
+## Running the ruby code
+
+** This project uses Glim, a pre alpha library for using LLMs. TODO: Make a publicly accessible version. **
+
+```
+git clone <this repo>
+git clone <glim>
+gem install pdf-reader
+cp sample.env .env # modify
+ruby gen/generate.rb
+```
+
+## What does Glim buy us? 
+
+* supports claude and openaAI (and also Llama2 via anyscale)
+* caches results so if there is a bug in your code, it will run quickly the nect time you run it, etc. 
+* various convenience features
