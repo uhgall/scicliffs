@@ -4,19 +4,20 @@ req.llm_name = "gpt-3.5-turbo-16k"
 #req.llm_name = "claude-2"
 %>
 
-Write an article about the academic paper below:
+
+---
+<%= full_text_from_paper %>
+---
+
+Write an article about the academic paper above:
 - in the style of a blog post on a top rated science blog on substack. 
 - for an audience of first principles thinkers with a good general science background. 
 - explain all acronyms and jargon. Use markdown formatting.
 - IMPORTANT: Write from the perspective of a reader of the academic paper; for example, use phrases like "The researchers at [University] found that..."
 instead of "We found that".
 
----
-<%= full_text_from_paper %>
----
+In your response, put your article you wrote into into an XML file tag, like this:
 
-
-Put the article into into an XML file tag, like this:
 <file pathname="article.md">
 (article text)
 </file>

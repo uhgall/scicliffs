@@ -57,6 +57,8 @@ def generate_article(pdf_file_path)
     cost = [req_article, req_headline, req_teaser, req_images, req_errata].map { |x| x.response.total_cost }.sum
     puts "Total Cost: $ #{cost}"
 
+    puts output_text
+
     return output_text
     
     # Or we could do something more structured, like:
