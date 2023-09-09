@@ -1,4 +1,5 @@
 .env
 glim_cache/*
 glim_logs/*
+glim_old
 .DS_Store
