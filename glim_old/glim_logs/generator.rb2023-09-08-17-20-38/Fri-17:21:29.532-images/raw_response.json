@@ -1,7 +1,0 @@
-{
-  "completion": " <file pathname=\"prompts.txt\">\nA pile of wooden blocks arranged in a complex tower next to a hand holding a block, planning the next move\nGeometric shapes sliding across a virtual chessboard, considering possible configurations\nCogwheels and gears turning inside a transparent human brain, systems planning ahead\n</file>",
-  "stop_reason": "stop_sequence",
-  "model": "claude-instant-1.2",
-  "stop": "\n\nHuman:",
-  "log_id": "b082f92e27b163acdb6b18a886e93086ce4b086393cd3964f918a29ef81ce94f"
-}

@@ -1,7 +1,0 @@
-{
-  "completion": " When LLMs reason like humans, they're unstoppable. New research develops a plan.",
-  "stop_reason": "stop_sequence",
-  "model": "claude-2.0",
-  "stop": "\n\nHuman:",
-  "log_id": "a508a9d2577d75e0e84ae6530f60b71f265b9f7322740dadb3c10ece2d0af5ee"
-}

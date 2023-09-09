@@ -1,7 +1,0 @@
-{
-  "completion": " Boost Reasoning in Language Models with Planning",
-  "stop_reason": "stop_sequence",
-  "model": "claude-2.0",
-  "stop": "\n\nHuman:",
-  "log_id": "fc5ad8de23e603c76d3274a5609516c9b6f44d08a7a6e08f4a3b646ef4936e14"
-}

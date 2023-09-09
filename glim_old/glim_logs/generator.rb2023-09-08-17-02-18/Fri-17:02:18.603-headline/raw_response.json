@@ -1,7 +1,0 @@
-{
-  "completion": " LLMs Gain Strategic Reasoning Powers Through World Model Planning",
-  "stop_reason": "stop_sequence",
-  "model": "claude-instant-1.2",
-  "stop": "\n\nHuman:",
-  "log_id": "bacf18c44f7bba6c3475fdad94a24b8a7951395bb4d60c8011a3b04b48ef3a04"
-}

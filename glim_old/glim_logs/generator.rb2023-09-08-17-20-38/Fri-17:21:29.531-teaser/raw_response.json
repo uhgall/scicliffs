@@ -1,7 +1,0 @@
-{
-  "completion": " Researchers give language models a \"world model\" to boost reasoning.",
-  "stop_reason": "stop_sequence",
-  "model": "claude-instant-1.2",
-  "stop": "\n\nHuman:",
-  "log_id": "7a4927c223e7c59c6cb5487755de28b1691ac826b6aa7c4f82cf5415c7a21cba"
-}

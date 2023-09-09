@@ -1,7 +1,0 @@
-{
-  "completion": " <file pathname=\"summaries/rap.xml\">\n<summary>\nNew framework enables LLMs to plan using world models, rewards and search algorithms like MCTS, allowing more coherent, long-term strategic reasoning compared to prior chaining approaches.\n</summary>\n</file>",
-  "stop_reason": "stop_sequence",
-  "model": "claude-instant-1.2",
-  "stop": "\n\nHuman:",
-  "log_id": "95675cd5f6124da4a6b734b0e4b80a8c99051431b9f1d53ab9ce0f7d4d7151cc"
-}

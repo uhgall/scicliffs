@@ -1,7 +1,0 @@
-{
-  "completion": " AI Gains Human-Like Foresight Through Planning",
-  "stop_reason": "stop_sequence",
-  "model": "claude-2.0",
-  "stop": "\n\nHuman:",
-  "log_id": "36bfdcddda00c451818a96767efb5d1456033f98eed7738e17c09b60378215f4"
-}

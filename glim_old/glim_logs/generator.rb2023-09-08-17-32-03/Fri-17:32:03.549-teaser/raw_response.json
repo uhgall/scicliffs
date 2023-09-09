@@ -1,7 +1,0 @@
-{
-  "completion": " Here is a 30 word teaser for the article:\n\nNew research enables AI models to reason more like humans by planning ahead using an internal \"world model\" - a breakthrough for deliberative reasoning.",
-  "stop_reason": "stop_sequence",
-  "model": "claude-2.0",
-  "stop": "\n\nHuman:",
-  "log_id": "3c0bd97cf8e0b10eb86edfc91af9f27f412fafb6feccafa7d0eb55e973ce6853"
-}

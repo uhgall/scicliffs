@@ -1,7 +1,0 @@
-{
-  "completion": " <file pathname=\"prompts.txt\">\nA jigsaw puzzle depicting the key components of the RAP framework\nA stack of books representing the different reasoning tasks evaluated for RAP versus baseline methods  \nThe RAP framework diagram coming to life as blocks are rearranged in a virtual world\n</file>",
-  "stop_reason": "stop_sequence",
-  "model": "claude-instant-1.2",
-  "stop": "\n\nHuman:",
-  "log_id": "f8320b75ea8c1725ba993a511cc7bc13c1715ec8e76f4365c052aaf0d4881362"
-}

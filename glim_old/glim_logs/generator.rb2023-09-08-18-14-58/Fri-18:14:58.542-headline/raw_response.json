@@ -1,7 +1,0 @@
-{
-  "completion": " AI Takes Big Step Towards Human-Like Reasoning",
-  "stop_reason": "stop_sequence",
-  "model": "claude-2.0",
-  "stop": "\n\nHuman:",
-  "log_id": "764d42816bf1b9e3e3f3d539a95c82e902c9ad8f92994803765fdc058350a9d2"
-}

@@ -1,7 +1,0 @@
-{
-  "completion": " Here are 3 image prompts for the article:\n\n<file pathname=\"prompts.txt\">\nAstronaut drinking coffee on the moon\nRocket launching into starry night sky  \nAstronaut planting flag on Mars surface\n</file>",
-  "stop_reason": "stop_sequence",
-  "model": "claude-2.0",
-  "stop": "\n\nHuman:",
-  "log_id": "926dc15896f7db1b7a52b1721cfacdfc51d95b854d0ba8c60bd389dbac007475"
-}

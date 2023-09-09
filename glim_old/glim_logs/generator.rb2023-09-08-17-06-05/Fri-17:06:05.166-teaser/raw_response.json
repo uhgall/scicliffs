@@ -1,7 +1,0 @@
-{
-  "completion": " Here is a 30-word teaser for the article:\n\nNew research enables large language models to perform complex multi-step reasoning by giving them an internal world model and strategic planning abilities like humans use.",
-  "stop_reason": "stop_sequence",
-  "model": "claude-instant-1.2",
-  "stop": "\n\nHuman:",
-  "log_id": "ed8d571c52b53e4d8c1e217ffb87ad5168e55aeab24db4e833025cc959e8daf3"
-}

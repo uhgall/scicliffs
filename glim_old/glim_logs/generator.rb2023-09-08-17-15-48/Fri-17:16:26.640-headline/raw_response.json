@@ -1,7 +1,0 @@
-{
-  "completion": " Human-like Reasoning Comes to Language Models",
-  "stop_reason": "stop_sequence",
-  "model": "claude-instant-1.2",
-  "stop": "\n\nHuman:",
-  "log_id": "aeff15b8d3ed1d2871354c7a51996c8d12a9667fab8549ac75c93d4ea3cd30a3"
-}

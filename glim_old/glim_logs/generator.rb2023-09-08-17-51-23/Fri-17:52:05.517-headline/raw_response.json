@@ -1,7 +1,0 @@
-{
-  "completion": " Researchers Teach AI to Reason Like Humans Using Planning Models",
-  "stop_reason": "stop_sequence",
-  "model": "claude-2.0",
-  "stop": "\n\nHuman:",
-  "log_id": "784db4afec21fd68e1c78f0185f519b09a0472af7bd20f59a9c608de3e82af72"
-}

@@ -1,7 +1,0 @@
-{
-  "completion": " AI makes strides towards human-like reasoning",
-  "stop_reason": "stop_sequence",
-  "model": "claude-2.0",
-  "stop": "\n\nHuman:",
-  "log_id": "eb4db4ceea0ef05f35a10fe4fcee4a37b12bee6330d2bc0921c25906e9cd2a61"
-}

@@ -1,7 +1,0 @@
-{
-  "completion": " Here are 3 image prompts for the AI article, each 12 words or less:\n\n<file pathname=\"prompts.txt\">\nBlocks rearranging into new shape \nMathematical formulas computing solution\nLightbulb thinking about logic puzzle\n</file>",
-  "stop_reason": "stop_sequence",
-  "model": "claude-2.0",
-  "stop": "\n\nHuman:",
-  "log_id": "072530e186295531acb9a3092d75c6f09a68b2aa7ebb13f79a004943f85cbb6a"
-}

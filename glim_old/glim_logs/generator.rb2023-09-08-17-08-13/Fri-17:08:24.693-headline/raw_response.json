@@ -1,7 +1,0 @@
-{
-  "completion": " Planning for Perfection: RAP Enhances LLM Reasoning",
-  "stop_reason": "stop_sequence",
-  "model": "claude-instant-1.2",
-  "stop": "\n\nHuman:",
-  "log_id": "af9832d5ec1e9ed1ee7ca5db82ab77e32dae24e9cb62f7ea5ccf254ca15147f5"
-}

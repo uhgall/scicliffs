@@ -1,7 +1,0 @@
-{
-  "completion": " New research enables large language models to reason more like humans using planning with internal world models.",
-  "stop_reason": "stop_sequence",
-  "model": "claude-2.0",
-  "stop": "\n\nHuman:",
-  "log_id": "335a1d296302ebe579cdf797cf229bfa4a9220334e234fa3b6a445ae54c3d136"
-}
