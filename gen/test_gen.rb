@@ -2,7 +2,7 @@ require_relative 'generator.rb'
 
 #pdf_name = "2305.14992.pdf"
 
-ids = ['2307.12008', '2307.12008']
+ids = ['2307.12008']
 
 for id in ids
     pdf_name = "#{id}.pdf"

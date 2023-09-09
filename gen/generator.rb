@@ -19,8 +19,8 @@ def generate_article(pdf_file_path)
     # do these in parallel
     req_article = glim.request_from_template('article', full_text_from_paper:)
     req_article.llm_name = forced_default_llm if forced_default_llm
-    # req_errata = glim.request_from_template('errata', full_text_from_paper:)
-    # req_errata.llm_name = forced_default_llm if forced_default_llm
+    req_errata = glim.request_from_template('errata', full_text_from_paper:)
+    req_errata.llm_name = forced_default_llm if forced_default_llm
 
     article_completion = req_article.response.completion
     _, files = extract_and_save_files(article_completion)
@@ -46,13 +46,15 @@ def generate_article(pdf_file_path)
 
     output_text = "# #{headline} \n\n #{teaser}\n\n #{article}" 
 
-    output_text += "\n\n-----\nImage prompts (TODO):\n" + image_prompts.join("\n")
+    output_text += "\n# Image prompts (TODO):\n"
+    for image_prompt in image_prompts
+        output_text += "\n\n* #{image_prompt}"
+    end
+    
+    errata = req_errata.response.completion
+    output_text += "\n\n# Errata:\n\n #{errata}\n"
 
-    # errata = req_errata.response.completion
-    # output_text += "\n\n-----\nErrata:\n\n #{errata}\n"
-
-
-    cost = [req_article, req_headline, req_teaser, req_images].map { |x| x.response.total_cost }.sum
+    cost = [req_article, req_headline, req_teaser, req_images, req_errata].map { |x| x.response.total_cost }.sum
     puts "Total Cost: $ #{cost}"
 
     return output_text
