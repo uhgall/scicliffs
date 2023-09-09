@@ -10,12 +10,12 @@ gem 'minitest', '~> 5.0'
 gem 'anthropic'
 gem 'ruby-openai'
 gem 'json-schema'
-gem 'arx'
 
 gem 'glim_ai', '0.2.0'
-
 gem "tiktoken_ruby", "~> 0.0.5"
 
 gem 'pdf-reader'
-gem "arxiv"
 gem "arx"
+gem "rest-client"
+gem "uri
+"
