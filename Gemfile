@@ -26,3 +26,7 @@ gem "tiktoken_ruby", "~> 0.0.5"
 gem 'pdf-reader'
 gem "arx"
 gem "rest-client"
+gem "uri"
+
+gem "sinatra"
+gem "puma"
