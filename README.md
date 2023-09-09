@@ -45,3 +45,19 @@ ruby gen/generate.rb
 * supports Claude and OpenAI (and also Llama2 via anyscale)
 * caches results so if there is a bug in your code, it will run quickly the nect time you run it, etc. 
 * various convenience features - token counting, cost calculation, file extraction, templating language for prompts (erb), logging
+
+## Starting the service locally
+
+1. bundle install
+2. cp sample.env .env
+3. add API keys and set your desired LLM in the .env file
+4. ruby ./app.rb
+5. navigate your browser to https://localhost:4567/{id} where id is an arxiv.org id
+
+For example: 
+
+http://localhost:4567/2309.03801
+http://localhost:4567/2309.03874
+http://localhost:4567/2309.03440
+http://localhost:4567/2309.00537
+http://localhost:4567/2309.02432
