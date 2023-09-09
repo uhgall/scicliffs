@@ -11,7 +11,6 @@ gem 'anthropic'
 gem 'ruby-openai'
 gem 'json-schema'
 
-<<<<<<< HEAD
 if File.exist?('../glim')
     puts "using local glim_ai gem"
     gem 'glim_ai', path: '../glim'
@@ -20,9 +19,6 @@ else
     gem 'glim_ai', '0.2.0'
 end
 
-=======
-gem 'glim_ai', '0.2.0'
->>>>>>> 51f958dc364bb389fdbbdc133cc2e3bbcde29cab
 gem "tiktoken_ruby", "~> 0.0.5"
 
 
@@ -30,5 +26,3 @@ gem "tiktoken_ruby", "~> 0.0.5"
 gem 'pdf-reader'
 gem "arx"
 gem "rest-client"
-gem "uri
-"

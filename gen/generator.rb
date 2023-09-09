@@ -72,4 +72,3 @@ def generate_article(pdf_file_path)
     # How did they do it
     # What were their conclusions
 end
-
