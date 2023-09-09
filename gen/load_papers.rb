@@ -16,7 +16,7 @@ def fetch_arxiv_paper(id)
   end
 
   # Fetch the PDF using rest-client
-  response = RestClient.get("https://arxiv.org/pdf/" + arxiv_id, {
+  response = RestClient.get("https://arxiv.org/pdf/" + id, {
     user_agent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537'
   })
 
