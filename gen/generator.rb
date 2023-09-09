@@ -1,6 +1,8 @@
 require 'pdf-reader'
 require 'glim_ai'
-require_relative 'utils'
+# require_relative 'utils'
+
+forced_default_llm = ENV.fetch('DEFAULT_LLM_NAME')
 
 require 'dotenv'
 Dotenv.load
@@ -25,7 +27,9 @@ glim = GlimContext.new
 
 # do these in parallel
 req_article = glim.request_from_template('article', full_text_from_paper:)
+req_article.llm_name = forced_default_llm if forced_default_llm
 req_errata = glim.request_from_template('errata', full_text_from_paper:)
+req_errata.llm_name = forced_default_llm if forced_default_llm
 
 article_completion = req_article.response.completion
 _, files = extract_and_save_files(article_completion)
@@ -35,8 +39,13 @@ raise "No article found in completion:\n#{article_completion}" if article.nil? |
 
 # do these in parallel
 req_headline = glim.request_from_template('headline', article:)
+req_headline.llm_name = forced_default_llm if forced_default_llm
+
 req_teaser = glim.request_from_template('teaser', article:)
+req_teaser.llm_name = forced_default_llm if forced_default_llm
+
 req_images = glim.request_from_template('images', article:)
+req_images.llm_name = forced_default_llm if forced_default_llm
 
 headline = req_headline.response.completion
 teaser = req_teaser.response.completion
