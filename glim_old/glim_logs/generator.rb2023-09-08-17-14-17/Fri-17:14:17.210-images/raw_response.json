@@ -1,0 +1,7 @@
+{
+  "completion": " <file pathname=\"prompts.txt\">\nA diagram showing the flow of information between the different components of the RAP framework - the LLM, world model, MCTS search, and reward signals.\nAn illustration showing the difference between sequential \"chaining\" of steps versus search-based planning using a world model, with examples from a multi-step math or logic problem.  \nDifferent colored blocks arranged in a complex tower configuration, representing the state space explored by the world model during planning to reach a goal configuration.\n</file>",
+  "stop_reason": "stop_sequence",
+  "model": "claude-instant-1.2",
+  "stop": "\n\nHuman:",
+  "log_id": "24bfc2b622c3dfcd0551c6b805527e86af3d648311a6144b547eed0fa62845e2"
+}

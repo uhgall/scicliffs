@@ -1,0 +1,7 @@
+{
+  "completion": " Here is a 30-word teaser for the article:\n\nNew research enables large language models to gain strategic reasoning skills like humans, by developing an internal \"world model\" and applying principled planning techniques to efficiently search problem spaces.",
+  "stop_reason": "stop_sequence",
+  "model": "claude-instant-1.2",
+  "stop": "\n\nHuman:",
+  "log_id": "37d10471e0840991dd1dd782b790d93158ab744f31f3bb146b82e162df761865"
+}

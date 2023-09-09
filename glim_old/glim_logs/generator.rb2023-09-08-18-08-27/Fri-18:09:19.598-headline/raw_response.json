@@ -1,0 +1,7 @@
+{
+  "completion": " AI Takes a Step Toward Deliberate, Human-Style Reasoning",
+  "stop_reason": "stop_sequence",
+  "model": "claude-2.0",
+  "stop": "\n\nHuman:",
+  "log_id": "b7ab5f4f27c3405137917adcc79c4600c040617f12d1c71be19fc3a9e24133ce"
+}

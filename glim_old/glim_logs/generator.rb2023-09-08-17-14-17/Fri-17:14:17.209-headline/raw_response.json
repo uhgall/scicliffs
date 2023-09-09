@@ -1,0 +1,7 @@
+{
+  "completion": " LLMs Gain Human-Like Planning Skills Through World Modeling and Search",
+  "stop_reason": "stop_sequence",
+  "model": "claude-instant-1.2",
+  "stop": "\n\nHuman:",
+  "log_id": "a9df517116a987830592a384e3bf941abc385646b3c2ccc2b2e0172cc23bc240"
+}

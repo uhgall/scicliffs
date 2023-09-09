@@ -1,0 +1,7 @@
+{
+  "completion": " Researchers Make AI Reason More Like Humans",
+  "stop_reason": "stop_sequence",
+  "model": "claude-2.0",
+  "stop": "\n\nHuman:",
+  "log_id": "12fc78630e5bb0b801922efb623eb0aaba7d80a884972c2b34bd285ba81063b1"
+}

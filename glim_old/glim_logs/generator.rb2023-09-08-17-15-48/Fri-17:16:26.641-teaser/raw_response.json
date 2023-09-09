@@ -1,0 +1,7 @@
+{
+  "completion": " New technique enables language models to plan and reason like humans",
+  "stop_reason": "stop_sequence",
+  "model": "claude-instant-1.2",
+  "stop": "\n\nHuman:",
+  "log_id": "7c963d79f6bd148f3a0bc35dfe58b64cb22eeffa33b42d793aaf4d06cd4d773e"
+}

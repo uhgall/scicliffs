@@ -1,0 +1,7 @@
+{
+  "completion": " LLMs Finally Gain Human-Like Planning and Imagination",
+  "stop_reason": "stop_sequence",
+  "model": "claude-instant-1.2",
+  "stop": "\n\nHuman:",
+  "log_id": "5699093a979548b7db5f20ff166bf4a822b75543f02e874d535a06b667d45e1c"
+}

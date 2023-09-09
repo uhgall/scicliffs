@@ -1,0 +1,7 @@
+{
+  "completion": " Here is a 10 word clickbait headline for the article:\n\nScientists Stunned by Mysterious Green Glow in Night Sky",
+  "stop_reason": "stop_sequence",
+  "model": "claude-2.0",
+  "stop": "\n\nHuman:",
+  "log_id": "4ce6ae45801c5e2d280f98e45d395b249531add7b82efdef86590b59be6a4516"
+}

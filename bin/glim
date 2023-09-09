@@ -1,0 +1,34 @@
+#!/usr/bin/env ruby
+
+def print_usage
+  puts "Usage: glim command [what]"
+  puts "command: clear"
+  puts "what: logs, cache"
+end
+
+def clear(what)
+  case what
+  when "logs"
+    target_dir = "glim_logs"
+  when "cache"
+    target_dir = "glim_cache"
+  else
+    print_usage
+    exit
+  end
+
+  if Dir.exist?(target_dir)
+    Dir.mkdir('glim_old') unless Dir.exist?('glim_old')
+    new_location = File.join('glim_old', target_dir)
+    File.rename(target_dir, new_location)
+    puts "#{what} cleared."
+  else
+    puts "#{target_dir} does not exist."
+  end
+end
+
+if ARGV.empty? || ARGV.size != 2 || ARGV[0] != "clear" || !["logs", "cache"].include?(ARGV[1])
+  print_usage
+else
+  clear(ARGV[1])
+end

@@ -1,0 +1,7 @@
+{
+  "completion": " AI Now Reasons Like Humans",
+  "stop_reason": "stop_sequence",
+  "model": "claude-2.0",
+  "stop": "\n\nHuman:",
+  "log_id": "4ac6fca35246b5aa7cd98c7ec78dd5652c0fb36df8d2d249813b225beda838b5"
+}

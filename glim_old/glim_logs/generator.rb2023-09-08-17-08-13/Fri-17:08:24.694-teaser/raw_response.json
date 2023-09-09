@@ -1,0 +1,7 @@
+{
+  "completion": " Here is a 29-word teaser for the article:\n\nDiscover how a new framework enhances language model reasoning with a world model and planning algorithms, making the process more similar to human strategic thinking.",
+  "stop_reason": "stop_sequence",
+  "model": "claude-instant-1.2",
+  "stop": "\n\nHuman:",
+  "log_id": "443ba52c1d2c96e3662671319d919074a08041f4642cd3deb8bb83d892488eab"
+}

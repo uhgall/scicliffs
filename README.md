@@ -34,15 +34,14 @@ Join the AI Revolution! 🚀 We're launching a crowdsourced, ever-evolving distr
 ** This project uses Glim, a pre alpha library for using LLMs. TODO: Make a publicly accessible version. **
 
 ```
-git clone <this repo>
-git clone <glim>
-gem install pdf-reader
-cp sample.env .env # modify
+git clone git@github.com:uhgall/scicliffs.git
+cp sample.env .env # modify this to add your API keys
+bundle
 ruby gen/generate.rb
 ```
 
 ## What does Glim buy us? 
 
-* supports claude and openaAI (and also Llama2 via anyscale)
+* supports Claude and OpenAI (and also Llama2 via anyscale)
 * caches results so if there is a bug in your code, it will run quickly the nect time you run it, etc. 
-* various convenience features
+* various convenience features - token counting, cost calculation, file extraction, templating language for prompts (erb), logging

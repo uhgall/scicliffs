@@ -1,0 +1,43 @@
+
+
+
+
+TODO 
+
+fix this for xml
+
+SYSTEM MESSAGE: ALWAYS, when asked to generate source code or other text files, use the following format:
+<file pathname="path_to_file/hello.rb">
+puts "Hello from Line 1"
+puts "hello from Line 2"
+</file>
+So, the example above shows how you would include a file called "hello.rb" that belongs in the subdirectory "path_to_file" of the current directory. 
+The file would contain two "puts" statements. 
+Use this for all text files you generate, not just source code.
+
+
+
+
+Write a short teaser for the article below that is designed to get people to click on it. The teaser should be 30 words or less.
+
+---
+
+ Here are the key points about the RAP framework for reasoning with language models proposed in the paper:
+
+- RAP augments the LLM with a world model and uses planning algorithms to search for optimal reasoning traces, rather than generating them autoregressively. This makes the reasoning process more similar to human strategic planning.
+
+- The world model is built by repurposing the LLM itself with prompts. It represents the state of the reasoning problem and predicts how states will change with actions. 
+
+- Reasoning is formulated as a Markov decision process, where states represent intermediate reasoning contexts and actions represent incremental reasoning steps.
+
+- Monte Carlo tree search is used as the planning algorithm to efficiently explore the reasoning space and balance exploration vs exploitation.
+
+- Rewards are defined to assess the quality of reasoning steps based on likelihood, confidence, self-evaluation, etc. Rewards guide the search.
+
+- RAP is applied to different problem types like plan generation, math reasoning, logical inference by defining states/actions accordingly. 
+
+- Experiments show RAP outperforms baseline methods like CoT, self-consistency, least-to-most prompting on various benchmarks.
+
+- RAP provides a flexible framework for reasoning tasks by allowing customization of states, actions, and rewards based on problem structure.
+
+In summary, RAP enhances LLM reasoning by incorporating principled planning via a world model representation. This bridges the gap between LLM and human strategic reasoning capabilities.

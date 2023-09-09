@@ -1,0 +1,10 @@
+
+
+Come up with a catchy clickbaity headline for the article below.
+The headline should trigger curiosity and be 10 words or less.
+
+---
+
+---
+
+Respond only with the headline, nothing else.

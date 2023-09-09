@@ -1,0 +1,7 @@
+{
+  "completion": " Here are 3 prompts for generating images for the blog post summarizing the paper \"Reasoning with Language Model is Planning with World Model\":\n\n<file pathname=\"prompts.txt\">\nA photo of a person rearranging colored blocks, thinking about each step. Text: Multi-Step Reasoning\n\nA graph showing two lines, one going up steadily labeled \"Human Performance\", the other zig-zagging with a lower final value labeled \"LLM Performance\". Text: Reasoning Capabilities \n\nA maze visualized as branching paths overlaid on a brain. Text: Exploring Vast Reasoning Spaces\n</file>",
+  "stop_reason": "stop_sequence",
+  "model": "claude-2.0",
+  "stop": "\n\nHuman:",
+  "log_id": "ad5658edbef232e82979581e9c9c1a507165e7a0519dd493e6be31b684163dc0"
+}

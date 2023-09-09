@@ -1,0 +1,4 @@
+58.137, TODO FOR ANTHROPIC, article.erb, 14512, prompt_tokens + , 834, completion_tokens = $,0.18717736, 58.036, seconds, 14.370337555610751, tokens/s, glim_logs/generator.rb2023-09-08-17-57-38/Fri-17:57:38.451-article
+60.427, TODO FOR ANTHROPIC, headline.erb, 885, prompt_tokens + , 8, completion_tokens = $,0.01001414, 2.284, seconds, 3.503274247693751, tokens/s, glim_logs/generator.rb2023-09-08-17-57-38/Fri-17:58:36.588-headline
+63.564, TODO FOR ANTHROPIC, teaser.erb, 880, prompt_tokens + , 18, completion_tokens = $,0.01028584, 3.129, seconds, 5.7523130689996345, tokens/s, glim_logs/generator.rb2023-09-08-17-57-38/Fri-17:58:36.589-teaser
+70.482, TODO FOR ANTHROPIC, images.erb, 1016, prompt_tokens + , 124, completion_tokens = $,0.015248639999999999, 6.91, seconds, 17.94434763179472, tokens/s, glim_logs/generator.rb2023-09-08-17-57-38/Fri-17:58:36.589-images

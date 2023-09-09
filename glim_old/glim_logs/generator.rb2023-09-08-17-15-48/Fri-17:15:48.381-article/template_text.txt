@@ -1,0 +1,21 @@
+<%
+#req.llm_name = "gpt-3.5-turbo"
+#req.llm_name = "claude-instant-1"
+req.llm_name = "claude-2"
+
+%>
+
+<%= prompt_output_files %>
+
+Write an article about the academic paper below:
+- in the style of a blog post on a top rated science blog on substack. 
+- for an audience of first principles thinkers with a good general science background. 
+- explain all acronyms and jargon. Use markdown formatting.
+- IMPORTANT: Write from the perspective of a reader of the academic paper; for example, use phrases like "The researchers at [University] found that..."
+instead of "We found that".
+
+Put the article in a file named "article.md".
+
+---
+
+<%= full_text_from_paper %>

@@ -1,0 +1,8 @@
+
+
+Write a short "teaser" inspiring curiosity about the article below that is designed to get people to click on it. 
+It should be 30 words or less.
+---
+
+---
+Respond only with the teaser, nothing else.

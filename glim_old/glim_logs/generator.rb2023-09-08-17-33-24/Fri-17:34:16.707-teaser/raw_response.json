@@ -1,0 +1,7 @@
+{
+  "completion": " Teased from the future: AI discovers human-like reasoning through planning",
+  "stop_reason": "stop_sequence",
+  "model": "claude-2.0",
+  "stop": "\n\nHuman:",
+  "log_id": "018c3bd337e4669687ddc24edbd33414dea908516ca2ce25de7d63b8fad18320"
+}

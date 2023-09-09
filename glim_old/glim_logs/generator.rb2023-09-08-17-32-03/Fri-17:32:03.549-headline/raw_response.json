@@ -1,0 +1,7 @@
+{
+  "completion": " How AI is Learning to Reason Like Humans",
+  "stop_reason": "stop_sequence",
+  "model": "claude-2.0",
+  "stop": "\n\nHuman:",
+  "log_id": "d6f588a64d1c78b9a756996b99cb1b1e66fc2bdbc7fee37c1c498975979008f2"
+}

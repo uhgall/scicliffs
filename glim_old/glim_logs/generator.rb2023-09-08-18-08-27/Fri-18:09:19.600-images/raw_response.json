@@ -1,0 +1,7 @@
+{
+  "completion": " Here are 3 image prompts for the article, with each prompt 12 words or less:\n\n<file pathname=\"prompts.txt\">\nStack of differently shaped blocks arranged into a pyramid.\nPerson pointing at mathematical equations on chalkboard. \nMaze with a path highlighted through it.\n</file>",
+  "stop_reason": "stop_sequence",
+  "model": "claude-2.0",
+  "stop": "\n\nHuman:",
+  "log_id": "7b66095714ac5095112d00b9285ca3cb42ad4cacc3aaaa7a278cafe9c3f53029"
+}

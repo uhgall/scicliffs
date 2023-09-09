@@ -1,0 +1,7 @@
+{
+  "completion": " Here are 3 prompt ideas for generating images to accompany the blog post:\n\n<file pathname=\"prompts.txt\">\nA symbolic image representing internal world modeling, with gears and thought bubbles inside a person's head\n\nA flowchart/diagram showing the Reasoning via Planning process with multiple branches for exploration vs exploitation \n\nAn image of a lightbulb with a face having an \"Aha!\" moment to represent the breakthrough of more human-like reasoning\n</file>",
+  "stop_reason": "stop_sequence",
+  "model": "claude-2.0",
+  "stop": "\n\nHuman:",
+  "log_id": "026d7b9261cf4b2c8fa73b600a11a01390b0ed24b5964a5fd6d97eb35ea9673f"
+}

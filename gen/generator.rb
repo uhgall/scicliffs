@@ -2,6 +2,8 @@ require 'pdf-reader'
 require 'glim_ai'
 
 pdf_name = "2305.14992.pdf"
+#pdf_name = "0601108.pdf" # that one weirdly doesn't work, not sure why, article is empty but completion looks right
+
 pdf_file_path = File.join('input',pdf_name)
 reader = PDF::Reader.new(pdf_file_path)
 
@@ -12,10 +14,15 @@ end
 
 glim = GlimContext.new
 
+# do these in parallel
 req_article = glim.request_from_template('article', full_text_from_paper:)
+req_errata = glim.request_from_template('errata', full_text_from_paper:)
+
 article_completion = req_article.response.completion
 _, files = extract_and_save_files(article_completion)
 article = files["article.md"]
+
+raise "No article found in completion:\n#{article_completion}" if article.nil? || article.empty?
 
 # do these in parallel
 req_headline = glim.request_from_template('headline', article:)
@@ -32,11 +39,18 @@ output_text = "# #{headline} \n\n #{teaser}\n\n #{article}"
 
 output_text += "\n\n-----\nImage prompts (TODO):\n" + image_prompts.join("\n")
 
+errata = req_errata.response.completion
+output_text += "\n\n-----\nErrata:\n\n #{errata}\n"
+
+
+
 outfilename = pdf_name.gsub('.pdf', '.md')
 f = File.open(File.join('output',outfilename), 'w')
 f.write(output_text)
 f.close
 
+cost = [req_article, req_headline, req_teaser, req_images].map { |x| x.response.total_cost }.sum
+puts "Total Cost: $ #{cost}"
 
 
 # Or we could do something more structured, like:

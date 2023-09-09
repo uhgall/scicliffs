@@ -1,0 +1,54 @@
+
+
+Come up with a good, catchy headline for the article below that is accurate and informative,
+but also designed to get people to click on it. The headline should be 10 words or less.
+
+Respond only with the headline, nothing else.
+
+ Here is a blog post in the style of a top rated science blog on Substack about the academic paper "Reasoning with Language Model is Planning with World Model":
+
+# Researchers Enable Language Models to Reason Like Humans
+
+Researchers from UC San Diego and University of Florida have developed a new method that allows large language models (LLMs) like GPT-3 to reason more like humans by planning ahead using a "world model". 
+
+In a paper published on arXiv, the researchers introduce the Reasoning via Planning (RAP) framework. RAP gives LLMs two key capabilities that human reasoning relies on:
+
+1. An internal **world model** that can predict how the world or environment will change in response to actions. 
+
+2. The ability to do **deliberate planning** by thinking ahead about possible actions and outcomes.
+
+## LLMs Lack Human-Like Reasoning Abilities
+
+LLMs like GPT-3 have shown impressive abilities to generate fluent text and even perform some types of reasoning when prompted appropriately. However, they still struggle with complex, multi-step reasoning that comes naturally to humans.
+
+For example, when given a task like planning how to rearrange blocks into a target configuration, GPT-3 succeeds only 1% of the time, compared to 78% for humans. The researchers attribute this deficiency to two key differences between LLMs and human reasoning:
+
+1. **No internal world model:** Humans can imagine how the environment will change in response to potential actions. But LLMs have no way to "imagine" how the world looks after taking an action. 
+
+2. **No deliberation:** Humans think ahead, imagine potential future scenarios, and refine plans. But LLMs generate reasoning chains reflexively without looking ahead.
+
+## Introducing an Internal World Model and Deliberate Planning
+
+To overcome these limitations, the researchers augmented LLMs with two new capabilities:
+
+1. An **internal world model** that can predict the next state of the world given the current state and an action. This is implemented by repurposing the LLM itself to simulate state transitions.
+
+2. A **planning algorithm** based on Monte Carlo Tree Search that allows the LLM to deliberate by building a tree of possible future reasoning steps. It iteratively picks the best actions while balancing exploration vs. exploitation. 
+
+Together, these enhancements enable the LLM to simulate potential future scenarios and iterate on plans - just like humans!
+
+## Reasoning via Planning Outperforms Other Methods 
+
+The researchers tested RAP on a diverse set of reasoning tasks:
+
+- **Block rearrangement planning**: RAP achieved 64% success vs. 1% for standard CoT prompting.
+
+- **Math word problems**: RAP answered 48.6% correctly vs. 29.4% for CoT on grade school math questions.
+
+- **Logical inference**: RAP achieved 94.2% accuracy on proof generation vs. 87.8% for CoT.
+
+The results demonstrate RAP's ability to handle different types of complex, multi-step reasoning much better than previous state-of-the-art LLM reasoning methods. The researchers posit that equipping LLMs with more human-like deliberation and imagination unlocks substantially greater reasoning capabilities.
+
+## Key Takeaways
+
+This research proposes an exciting new paradigm for how we enable LLMs to reason. By repurposing LLMs as both a world model that can imagine environmental changes and a reasoning agent that plans strategicly, we can unlock much more human-like deliberation. The RAP framework provides a general approach to augmenting LLM reasoning across diverse applications. With further development, we may one day realize human-level reasoning in artificial intelligence systems.

@@ -1,0 +1,80 @@
+
+
+
+
+TODO 
+
+fix this for xml
+
+SYSTEM MESSAGE: ALWAYS, when asked to generate source code or other text files, use the following format:
+<file pathname="path_to_file/hello.rb">
+puts "Hello from Line 1"
+puts "hello from Line 2"
+</file>
+So, the example above shows how you would include a file called "hello.rb" that belongs in the subdirectory "path_to_file" of the current directory. 
+The file would contain two "puts" statements. 
+Use this for all text files you generate, not just source code.
+
+
+
+
+Suggest 3 prompts for having an image generation system like midjourney or DALL-E generate suitable images for the article below. 
+The prompts should describe the image only, no text. There should be no text in the image or with the image. 
+The images should reflect different aspects of the content of the article in a clever way. 
+Each prompt should be 12 words or less.
+
+Put your prompts in a file named "prompts.txt, one prompt per line.
+
+---
+
+ Here is the article in markdown format:
+
+<file pathname="article.md">
+# Researchers Make Progress in Getting AI to Reason More Like Humans
+
+Researchers at UC San Diego and the University of Florida have developed a new technique to improve reasoning capabilities in large language models (LLMs) like GPT-3 and LLaMA. Their work, [published on arXiv](https://arxiv.org/abs/2303.10261), enables LLMs to reason in a more deliberate, human-like manner as opposed to the purely instinctive approach used today. 
+
+## The Limitations of Current LLMs
+
+LLMs like GPT-3 have shown impressive reasoning skills, especially when prompted to break down complex questions into intermediate reasoning steps (also known as "chain of thought" reasoning). However, they still struggle with tasks that seem trivial for humans. 
+
+For example, when asked to generate a 2-6 step plan to rearrange blocks into a target configuration, GPT-3 only succeeds 1% of the time - compared to 78% for humans. LLMs also have difficulty with math, logical or common sense reasoning that requires multiple steps. 
+
+The researchers identify several key deficiencies of current LLM reasoning:
+
+- **No internal world model**: LLMs cannot predict how the world state changes in response to actions. Humans rely on their mental model of the environment to simulate potential outcomes when planning.
+
+- **No reward mechanism**: There is no way to assess if a reasoning step is moving towards the desired solution. Humans consciously evaluate options.
+
+- **No exploration/exploitation balance**: LLMs cannot balance trying new options vs choosing the best current one. Humans iteratively refine plans.
+
+## Introducing Reasoning via Planning
+
+To address these gaps, the researchers developed a framework called **Reasoning via Planning (RAP)**. RAP incorporates two key components into the LLM:
+
+- A **world model** that predicts state changes. The LLM is repurposed to simulate world states based on actions.
+
+- A **planning algorithm** that guides reasoning towards high reward states. They use Monte Carlo Tree Search, which balances exploration vs exploitation. 
+
+During reasoning, the LLM builds a tree of potential action sequences. The world model predicts outcomes, propagated as rewards to guide tree expansion. After iterative refinement, high reward reasoning traces emerge.
+
+RAP transforms the instinctive reasoning of LLMs into a more deliberate, goal-oriented planning process similar to human thinking. The explicit modeling of world states and rewards enables strategic exploration of the reasoning space.
+
+## Significant Improvements Across Tasks
+
+The researchers validated RAP on a diverse set of reasoning tasks:
+
+- **Plan generation**: For block rearrangement problems in 2-6 steps, RAP succeeded 64% of the time compared to near 0% for standard CoT prompting. LLaMA-33B with RAP even exceeded GPT-4 performance.
+
+- **Math reasoning**: On grade-school math word problems (GSM8K dataset), RAP with LLaMA-33B solved 48.6% correctly, substantially better than CoT (29.4%) and least-to-most prompting (25.5%).
+
+- **Logical reasoning**: RAP achieved 94.2% accuracy on proving facts using real-world rules, improving 14 percentage points over CoT.
+
+The consistent significant gains over strong baselines demonstrate RAP's potential as a general reasoning framework applicable to diverse domains.
+
+## Towards More Human-like AI
+
+By combining language model capabilities with planning, the Reasoning via Planning framework marks an innovative step towards achieving more human-level deliberative reasoning in AI systems. The researchers summarize that RAP "enables LLMs to reason in a manner close to humans' conscious planning."
+
+The flexibility to define different states, actions and rewards also opens up many possibilities for applying RAP. As LLM performance continues rapid improvement, integrating human-inspired reasoning and planning abilities will become increasingly important to realize their full potential.
+</file>

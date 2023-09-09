@@ -1,0 +1,7 @@
+{
+  "completion": " New AI method enables models to reason more like humans through planning and foresight.",
+  "stop_reason": "stop_sequence",
+  "model": "claude-2.0",
+  "stop": "\n\nHuman:",
+  "log_id": "f40ee02b582f8043f7885afe38a2ac9362fb2e295d0a789b123999d02bb08b89"
+}
