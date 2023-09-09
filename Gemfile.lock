@@ -1,0 +1,55 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    Ascii85 (1.1.0)
+    addressable (2.8.5)
+      public_suffix (>= 2.0.2, < 6.0)
+    afm (0.2.2)
+    anthropic (0.1.0)
+      faraday (>= 1)
+      faraday-multipart (>= 1)
+    faraday (2.7.10)
+      faraday-net_http (>= 2.0, < 3.1)
+      ruby2_keywords (>= 0.0.4)
+    faraday-multipart (1.0.4)
+      multipart-post (~> 2)
+    faraday-net_http (3.0.2)
+    glim_ai (0.2.0)
+    hashery (2.1.2)
+    json-schema (4.0.0)
+      addressable (>= 2.8)
+    minitest (5.20.0)
+    multipart-post (2.3.0)
+    must_be (1.1.0)
+    pdf-reader (2.11.0)
+      Ascii85 (~> 1.0)
+      afm (~> 0.2.1)
+      hashery (~> 2.0)
+      ruby-rc4
+      ttfunk
+    public_suffix (5.0.3)
+    rake (13.0.6)
+    ruby-openai (5.1.0)
+      faraday (>= 1)
+      faraday-multipart (>= 1)
+    ruby-rc4 (0.1.5)
+    ruby2_keywords (0.0.5)
+    tiktoken_ruby (0.0.5-arm64-darwin)
+    ttfunk (1.7.0)
+
+PLATFORMS
+  arm64-darwin-22
+
+DEPENDENCIES
+  anthropic
+  glim_ai (= 0.2.0)
+  json-schema
+  minitest (~> 5.0)
+  must_be
+  pdf-reader
+  rake (~> 13.0)
+  ruby-openai
+  tiktoken_ruby (~> 0.0.5)
+
+BUNDLED WITH
+   2.4.6

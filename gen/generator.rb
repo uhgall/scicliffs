@@ -1,5 +1,5 @@
 require 'pdf-reader'
-require_relative '../../ruby-llm/lib/globals'
+require 'glim_ai'
 
 pdf_name = "2305.14992.pdf"
 pdf_file_path = File.join('input',pdf_name)
