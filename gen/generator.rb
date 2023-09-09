@@ -14,10 +14,6 @@ def generate_article(pdf_file_path)
         full_text_from_paper += page.text
     end
 
-    # # use Arx gem to fetch pdf url for a paper by its arxiv.org id
-    # arxiv_url = fetch_arxiv_url('2307.12008')
-    # puts arxiv_url
-
     glim = GlimContext.new
 
     # do these in parallel
