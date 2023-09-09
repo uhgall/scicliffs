@@ -1,5 +1,6 @@
 require 'pdf-reader'
 require 'glim_ai'
+require_relative 'utils'
 
 pdf_name = "2305.14992.pdf"
 pdf_file_path = File.join('input',pdf_name)
@@ -9,6 +10,9 @@ full_text_from_paper = ""
 reader.pages.each do |page|
     full_text_from_paper += page.text
 end
+
+papers = fetch_arxiv_papers(5)
+puts papers
 
 glim = GlimContext.new
 
