@@ -1,8 +1,8 @@
 require 'sinatra'
-require_relative 'gen/utils'  
-require_relative 'gen/generator'  
-
 require 'redcarpet'
+
+require_relative 'gen/load_papers'  
+require_relative 'gen/generator'  
 
 def markdown_to_html(markdown_content, original_work_uri)
     renderer = Redcarpet::Render::HTML.new
