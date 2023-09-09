@@ -1,6 +1,5 @@
 require 'pdf-reader'
 require 'glim_ai'
-require_relative 'utils'
 
 # for now, this just returns one string with everything in it 
 # later we will want to be more structured
@@ -77,13 +76,3 @@ def generate_article(pdf_file_path)
     # How did they do it
     # What were their conclusions
 end
-
-
-# pdf_name = "2305.14992.pdf"
-# #pdf_name = "0601108.pdf" # that one weirdly doesn't work, not sure why, article is empty but completion looks right
-# pdf_file_path = File.join('input',pdf_name)
-
-pdf_file_path = fetch_arxiv_paper('2307.12008')
-puts pdf_file_path
-
-puts generate_article(pdf_file_path)
