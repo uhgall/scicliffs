@@ -11,9 +11,8 @@ gem 'anthropic'
 gem 'ruby-openai'
 gem 'json-schema'
 gem 'arx'
+gem 'rubocop', require: false
 
 gem 'glim_ai', '0.2.0'
-
 gem "tiktoken_ruby", "~> 0.0.5"
-
 gem 'pdf-reader'

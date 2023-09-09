@@ -2,20 +2,24 @@ require 'pdf-reader'
 require 'glim_ai'
 require_relative 'utils'
 
-pdf_name = "2305.14992.pdf"
-#pdf_name = "0601108.pdf" # that one weirdly doesn't work, not sure why, article is empty but completion looks right
+require 'dotenv'
+Dotenv.load
 
-pdf_file_path = File.join('input',pdf_name)
+arxiv_id = '2307.12008'
+
+# use Arx gem to fetch pdf url for a paper by its arxiv.org id
+pdf_file_path = fetch_arxiv_paper('2307.12008')
+
+# pdf_name = "2305.14992.pdf"
+# pdf_name = "0601108.pdf" # that one weirdly doesn't work, not sure why, article is empty but completion looks right
+# pdf_file_path = File.join('input',pdf_name)
+
 reader = PDF::Reader.new(pdf_file_path)
 
 full_text_from_paper = ""
 reader.pages.each do |page|
     full_text_from_paper += page.text
 end
-
-# use Arx gem to fetch pdf url for a paper by its arxiv.org id
-arxiv_url = fetch_arxiv_url('2307.12008')
-puts arxiv_url
 
 glim = GlimContext.new
 
@@ -46,7 +50,6 @@ output_text += "\n\n-----\nImage prompts (TODO):\n" + image_prompts.join("\n")
 
 errata = req_errata.response.completion
 output_text += "\n\n-----\nErrata:\n\n #{errata}\n"
-
 
 
 outfilename = pdf_name.gsub('.pdf', '.md')
