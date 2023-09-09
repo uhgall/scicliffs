@@ -18,3 +18,4 @@ gem "tiktoken_ruby", "~> 0.0.5"
 
 gem 'pdf-reader'
 gem "arxiv"
+gem "arx"
