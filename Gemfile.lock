@@ -67,6 +67,7 @@ GEM
     rack-protection (3.0.6)
       rack
     rake (13.0.6)
+    redcarpet (3.6.0)
     rest-client (2.1.0)
       http-accept (>= 1.7.0, < 2.0)
       http-cookie (>= 1.0.2, < 2.0)
@@ -107,6 +108,7 @@ DEPENDENCIES
   pdf-reader
   puma
   rake (~> 13.0)
+  redcarpet
   rest-client
   ruby-openai
   sinatra
