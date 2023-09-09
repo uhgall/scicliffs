@@ -30,3 +30,4 @@ gem "uri"
 
 gem "sinatra"
 gem "puma"
+gem "redcarpet"
