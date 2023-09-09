@@ -1,4 +1,4 @@
-require_relative 'utils.rb'
+require_relative 'load_papers.rb'
 require_relative 'generator.rb'
 
 ids = ['2307.12008', '2307.12008', '2302.13971v1' , '2303.08774v3']
