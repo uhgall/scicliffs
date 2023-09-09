@@ -45,7 +45,10 @@ GEM
     minitest (5.20.0)
     multipart-post (2.3.0)
     must_be (1.1.0)
+    mustermann (3.0.0)
+      ruby2_keywords (~> 0.0.1)
     netrc (0.11.0)
+    nio4r (2.5.8)
     nokogiri (1.15.4-arm64-darwin)
       racc (~> 1.4)
     nokogiri-happymapper (0.9.0)
@@ -57,7 +60,12 @@ GEM
       ruby-rc4
       ttfunk
     public_suffix (5.0.3)
+    puma (5.6.5)
+      nio4r (~> 2.0)
     racc (1.7.1)
+    rack (2.2.6.3)
+    rack-protection (3.0.6)
+      rack
     rake (13.0.6)
     rest-client (2.1.0)
       http-accept (>= 1.7.0, < 2.0)
@@ -69,13 +77,20 @@ GEM
       faraday-multipart (>= 1)
     ruby-rc4 (0.1.5)
     ruby2_keywords (0.0.5)
+    sinatra (3.0.6)
+      mustermann (~> 3.0)
+      rack (~> 2.2, >= 2.2.4)
+      rack-protection (= 3.0.6)
+      tilt (~> 2.0)
     tiktoken_ruby (0.0.5-arm64-darwin)
+    tilt (2.1.0)
     ttfunk (1.7.0)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.8.2)
+    uri (0.12.0)
 
 PLATFORMS
   arm64-darwin-22
@@ -90,10 +105,13 @@ DEPENDENCIES
   minitest (~> 5.0)
   must_be
   pdf-reader
+  puma
   rake (~> 13.0)
   rest-client
   ruby-openai
+  sinatra
   tiktoken_ruby (~> 0.0.5)
+  uri
 
 BUNDLED WITH
    2.4.6
