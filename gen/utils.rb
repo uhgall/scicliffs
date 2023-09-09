@@ -29,3 +29,21 @@ def fetch_arxiv_paper(id)
   # Return the file_path
   file_path
 end
+
+def get_article_for_arxiv_id(id)
+  # if we already have a .md file, use it
+  output_dir = File.join('output', 'arxiv')
+  md_file_path = File.join(output_dir, "#{id}.md")
+  if File.exist?(md_file_path)
+    puts "Returning cached generated article: #{md_file_path}"
+    return File.read(md_file_path)
+  end
+  pdf_file_path = fetch_arxiv_paper(id)
+  puts "Generating article for #{pdf_file_path} and saving to #{md_file_path}"
+  # save this to md_file_path
+  output_text = generate_article(pdf_file_path)
+  f = File.open(md_file_path, 'w')
+  f.write(output_text)
+  f.close
+  return output_text
+end
