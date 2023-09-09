@@ -12,6 +12,12 @@ def fetch_arxiv_paper(id)
   absolute_path = File.expand_path(file_path)
   puts "Attempting to write to: #{absolute_path}"
 
+  # Check if the file already exists
+  if File.exist?(file_path)
+    puts "File already exists at: #{absolute_path}"
+    return file_path
+  end
+
   # Fetch the PDF using rest-client
   response = RestClient.get(paper.pdf_url, {
     user_agent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537'

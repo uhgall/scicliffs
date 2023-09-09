@@ -1,6 +1,5 @@
 require 'pdf-reader'
 require 'glim_ai'
-require_relative 'utils'
 
 # for now, this just returns one string with everything in it 
 # later we will want to be more structured
