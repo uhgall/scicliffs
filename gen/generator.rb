@@ -15,8 +15,9 @@ reader.pages.each do |page|
     full_text_from_paper += page.text
 end
 
-# papers = fetch_arxiv_papers(5)
-# puts papers
+# use Arx gem to fetch pdf url for a paper by its arxiv.org id
+arxiv_url = fetch_arxiv_url('2307.12008')
+puts arxiv_url
 
 glim = GlimContext.new
 

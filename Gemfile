@@ -10,6 +10,7 @@ gem 'minitest', '~> 5.0'
 gem 'anthropic'
 gem 'ruby-openai'
 gem 'json-schema'
+gem 'arx'
 
 gem 'glim_ai', '0.2.0'
 
