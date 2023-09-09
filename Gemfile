@@ -10,12 +10,19 @@ gem 'minitest', '~> 5.0'
 gem 'anthropic'
 gem 'ruby-openai'
 gem 'json-schema'
-gem 'arx'
 
-gem 'glim_ai', '0.2.0'
+if File.exist?('../glim')
+    puts "using local glim_ai gem"
+    gem 'glim_ai', path: '../glim'
+else
+    puts "using remote glim_ai gem from rubygems"
+    gem 'glim_ai', '0.2.0'
+end
 
 gem "tiktoken_ruby", "~> 0.0.5"
 
+
+# let's add any  new project specific gems below this line
 gem 'pdf-reader'
 gem "arxiv"
 gem "arx"

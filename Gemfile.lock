@@ -1,3 +1,8 @@
+PATH
+  remote: ../glim
+  specs:
+    glim_ai (0.2.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -29,7 +34,6 @@ GEM
       multipart-post (~> 2)
     faraday-net_http (3.0.2)
     full-name-splitter (0.1.2)
-    glim_ai (0.2.0)
     happymapper (0.5.0)
       libxml-ruby (~> 2.9)
     hashery (2.1.2)
@@ -73,7 +77,7 @@ DEPENDENCIES
   arx
   arxiv
   dotenv
-  glim_ai (= 0.2.0)
+  glim_ai!
   json-schema
   minitest (~> 5.0)
   must_be
