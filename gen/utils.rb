@@ -5,4 +5,4 @@ def fetch_arxiv_papers(n)
   results.map(&:id)
 end
 
-
+puts fetch_arxiv_papers(3)

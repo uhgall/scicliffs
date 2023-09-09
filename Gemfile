@@ -16,3 +16,4 @@ gem 'glim_ai', '0.2.0'
 gem "tiktoken_ruby", "~> 0.0.5"
 
 gem 'pdf-reader'
+gem "arxiv"
